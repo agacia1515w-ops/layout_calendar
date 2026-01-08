@@ -13,12 +13,12 @@ body {
     }
 
 .calendar {
-    display: grid; 
-    grid-template-columns: repeat(7, $day-size); 
+    display:flex; 
+    flex-wrap: wrap;
     gap: $calendar-gap;
     padding: $calendar-padding;
     background-color: #fff;
-    width: calc(7 * #{$day-size} + 6 * #{$calendar-gap} + 2 * #{$calendar-padding});
+    width: calc(7 * #{$day-size} + 6 * #{$calendar-gap});
 }
 
 .calendar__day {
@@ -51,13 +51,14 @@ body {
             content:"#{$i}";
         }
     }
-    @for $days from 28 through 31 {
+ @for $days from 28 through 31 {
   .calendar--month-length-#{$days} {
     .calendar__day:nth-child(n + #{$days + 1}) {
       display: none;
     }
   }
 }
+
 $start-days: (
   mon: 1,
   tue: 2,
@@ -70,7 +71,8 @@ $start-days: (
 
 @each $day, $column in $start-days {
   .calendar--start-day-#{$day} .calendar__day:first-child {
-    grid-column-start: $column;
+    margin-left: ($column - 1) * ($day-size + $calendar-gap);
   }
 }
+
 
