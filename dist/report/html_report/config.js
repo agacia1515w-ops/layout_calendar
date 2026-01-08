@@ -4,13 +4,13 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/backstop_default_BackstopJS_Homepage_0_document_0_phone.png",
-        "test": "../bitmaps_test/20260108-101634/backstop_default_BackstopJS_Homepage_0_document_0_phone.png",
+        "test": "../bitmaps_test/20260108-112441/backstop_default_BackstopJS_Homepage_0_document_0_phone.png",
         "selector": "document",
         "fileName": "backstop_default_BackstopJS_Homepage_0_document_0_phone.png",
         "label": "BackstopJS Homepage",
         "requireSameDimensions": true,
         "misMatchThreshold": 0.1,
-        "url": "https://garris.github.io/BackstopJS/",
+        "url": "http://localhost:8080",
         "referenceUrl": "",
         "expect": 0,
         "viewportLabel": "phone",
@@ -28,13 +28,13 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/backstop_default_BackstopJS_Homepage_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20260108-101634/backstop_default_BackstopJS_Homepage_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20260108-112441/backstop_default_BackstopJS_Homepage_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "backstop_default_BackstopJS_Homepage_0_document_1_tablet.png",
         "label": "BackstopJS Homepage",
         "requireSameDimensions": true,
         "misMatchThreshold": 0.1,
-        "url": "https://garris.github.io/BackstopJS/",
+        "url": "http://localhost:8080",
         "referenceUrl": "",
         "expect": 0,
         "viewportLabel": "tablet",
